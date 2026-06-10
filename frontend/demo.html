@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>News loader demo</title>
+<style>
+  body { font: 16px/1.5 system-ui; margin: 2rem; background:#0f1115; color:#e8e8e8; }
+  [data-news-grid] { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1rem; }
+  .card { background:#1a1d24; border:1px solid #2a2f3a; border-radius:12px; overflow:hidden; cursor:pointer; }
+  .card-media img { width:100%; height:160px; object-fit:cover; display:block; }
+  .card-body { padding:1rem; }
+  .news-meta { display:flex; align-items:center; gap:.5rem; font-size:.8rem; color:#9aa4b2; }
+  .dot { width:4px; height:4px; border-radius:50%; background:#9aa4b2; display:inline-block; }
+  .card h3 { margin:.5rem 0; } .cta { color:#e8843a; font-size:.85rem; }
+  .reader { position:fixed; inset:0; background:#0f1115; overflow:auto; padding:2rem; display:none; }
+  .reader.open { display:block; } .article-hero { width:100%; max-height:340px; object-fit:cover; border-radius:12px; }
+  .article-inner { max-width:720px; margin:1.5rem auto; } .src-pub { color:#9aa4b2; margin-left:.5rem; }
+  .close { position:fixed; top:1rem; right:1rem; font-size:1.5rem; background:#1a1d24; border:0; color:#fff; border-radius:8px; padding:.3rem .7rem; cursor:pointer; }
+</style></head>
+<body>
+  <h1>SEPESA newsroom — loader demo</h1>
+  <p>Renders from a local sample (offline). To test the live feed instead, see the commented line in the script.</p>
+  <div data-news-grid></div>
+  <div class="reader"><button class="close">×</button><div class="reader-body"></div></div>
+
+  <script src="news-loader.js"></script>
+  <script>
+    // Offline sample so the demo works with no network. To test the REAL feed after publishing,
+    // comment out the two lines below and uncomment the SepesaNews.init(...) line.
+    var sample = [{
+      id:'2026-06-10-maha', category:'Acquisition', dateShort:'Jun 2026', dateFull:'June 2026',
+      cardTitle:'Maha Capital acquires 24% of PetroUrdaneta',
+      articleTitle:'Maha Capital exercises option for 24% stake in PetroUrdaneta oil field',
+      summary:'Stockholm-listed Maha Capital paid $5M to take a 24% stake in the Lake Maracaibo field.',
+      image:'https://picsum.photos/seed/oil/640/360', imageAlt:'Oil field',
+      body:[{type:'p',text:'Maha Capital, controlled by Starboard, exercised its option.'},
+            {type:'h4',text:'The deal'},{type:'p',text:'Paid $5M, total $10M, taking over Novonor’s stake.'}],
+      sources:[{title:'Maha Capital buys stake',url:'https://brazilenergyinsight.com',publisher:'Brazil Energy Insight'}]
+    }];
+    SepesaNews.renderNews(document.querySelector('[data-news-grid]'), sample);
+    // SepesaNews.init({ url: 'https://cdn.jsdelivr.net/gh/marcelgerardop/venezuela-oil-news-post@main/news.json' });
+
+    // Minimal drawer so you can verify the <template> article content (the real page has its own).
+    var grid = document.querySelector('[data-news-grid]');
+    var reader = document.querySelector('.reader'), rbody = document.querySelector('.reader-body');
+    grid.addEventListener('click', function (e) {
+      var card = e.target.closest('.card'); if (!card) return;
+      var tpl = card.querySelector('template.article-tpl');
+      rbody.innerHTML = ''; rbody.appendChild(tpl.content.cloneNode(true));
+      reader.classList.add('open');
+    });
+    document.querySelector('.close').addEventListener('click', function(){ reader.classList.remove('open'); });
+  </script>
+</body></html>

@@ -125,7 +125,8 @@ Plain vars (`wrangler.toml`): `GITHUB_OWNER`, `GITHUB_REPO`, `GITHUB_BRANCH=main
 - **jsDelivr:** serve `cdn.jsdelivr.net/gh/<owner>/<repo>@main/news.json` (CORS ok); purge via
   GET `purge.jsdelivr.net/gh/<owner>/<repo>@main/<path>` after each commit.
 - **Anthropic:** `POST api.anthropic.com/v1/messages`, headers `x-api-key`, `anthropic-version: 2023-06-01`,
-  `content-type`. Model `claude-haiku-4-5` with JSON-schema structured output.
+  `content-type`. Model `claude-opus-4-8` with `output_config.format` JSON-schema structured output
+  (guarantees valid JSON for a public-facing site; cost is trivial at a few posts/day).
 
 ## Error handling
 - Stale `news.json` sha → re-read + retry (≤3).

@@ -1,0 +1,14 @@
+name = "sepesa-news-bot"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# Non-secret vars (secrets are set with `wrangler secret put`, never here):
+[vars]
+GITHUB_OWNER = "marcelgerardop"
+GITHUB_REPO = "venezuela-oil-news-post"
+GITHUB_BRANCH = "main"
+
+# KV namespace for pending drafts (id is filled in during DEPLOY.md step 3).
+[[kv_namespaces]]
+binding = "DRAFTS"
+id = "REPLACE_WITH_KV_ID"
