@@ -11,13 +11,21 @@ never go into any file.
    wrangler kv namespace create DRAFTS
    ```
    Copy the printed `id` into `wrangler.toml` → `[[kv_namespaces]] id`.
-4. Set the secrets (run each; paste the value when prompted):
+4. Set the 5 secrets. **Easiest — one command from a gitignored file:**
+   ```
+   copy secrets.example.json secrets.json     # Windows (or: cp on bash)
+   # open secrets.json, paste your REAL values, save
+   wrangler secret bulk secrets.json          # uploads all 5 at once
+   ```
+   `secrets.json` is gitignored, so it never gets committed. Delete it after if you like.
+
+   **Or one at a time (no file):**
    ```
    wrangler secret put TELEGRAM_BOT_TOKEN     # from BotFather
    wrangler secret put TELEGRAM_SECRET_TOKEN  # the random string you chose
    wrangler secret put OWNER_USER_ID          # your numeric Telegram id (from @userinfobot)
-   wrangler secret put ANTHROPIC_API_KEY      # your Anthropic key (rotate after testing)
-   wrangler secret put GITHUB_TOKEN           # fine-grained PAT, Contents: read+write on this repo
+   wrangler secret put ANTHROPIC_API_KEY      # FRESH Anthropic key (rotate the chat one)
+   wrangler secret put GITHUB_TOKEN           # FRESH fine-grained PAT, Contents: read+write
    ```
 
 ## Deploy

@@ -2,3 +2,7 @@ node_modules/
 .dev.vars
 .wrangler/
 *.log
+
+# Real secrets — NEVER committed. Copy the .example files and fill these in locally.
+secrets.json
+worker/secrets.json
