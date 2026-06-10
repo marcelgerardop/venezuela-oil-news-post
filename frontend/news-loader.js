@@ -76,7 +76,10 @@ sourcesHTML(item.sources) + '\n' +
     var container = document.querySelector(selector);
     if (!container) return;
     try {
-      var res = await fetch(url, { cache: 'no-store' });
+      // Cache-buster: the feed (news.json) changes often; force a fresh copy each load so a
+      // new post shows immediately instead of waiting on a CDN/browser cached copy.
+      var sep = url.indexOf('?') === -1 ? '?' : '&';
+      var res = await fetch(url + sep + 'v=' + Date.now(), { cache: 'no-store' });
       var items = await res.json();
       renderNews(container, items);
       if (typeof opts.onRendered === 'function') opts.onRendered(container, items);
