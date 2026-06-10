@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": "2026-06-10-sample",
+    "category": "Test",
+    "dateShort": "Jun 2026",
+    "dateFull": "June 2026",
+    "cardTitle": "Sample card",
+    "articleTitle": "Sample article title",
+    "summary": "This is a sample summary.",
+    "image": "images/placeholder.jpg",
+    "imageAlt": "placeholder",
+    "body": [
+      {
+        "type": "p",
+        "text": "Body paragraph."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Example",
+        "url": "https://example.com",
+        "publisher": "Example"
+      }
+    ]
+  }
+]
