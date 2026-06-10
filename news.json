@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "id": "2026-06-10-maha-capital-takes-24-of-petrourdaneta",
+    "category": "Acquisition",
+    "dateShort": "Mar 2026",
+    "dateFull": "March 2026",
+    "cardTitle": "Maha Capital takes 24% of PetroUrdaneta",
+    "articleTitle": "Maha Capital exercises option for 24% stake in PetroUrdaneta oil field",
+    "summary": "Stockholm-listed Maha Capital, controlled by Brazil's Starboard, paid $5M to take a 24% stake in the Lake Maracaibo field — bringing its total outlay to $10M.",
+    "image": "images/2026-06-10-maha-capital-takes-24-of-petrourdaneta.jpg",
+    "imageAlt": "Offshore oil platform on Lake Maracaibo, Venezuela",
+    "body": [
+      {
+        "type": "p",
+        "text": "Maha Capital, a Stockholm-listed oil company controlled by the Brazilian asset manager Starboard, has exercised its option to acquire a 24% stake in the PetroUrdaneta oil field in Lake Maracaibo, Venezuela."
+      },
+      {
+        "type": "h4",
+        "text": "The deal"
+      },
+      {
+        "type": "p",
+        "text": "Maha paid $5 million to exercise a purchase option it originally secured in 2023, bringing its total payment for the asset to $10 million. It takes over the stake previously held by the Brazilian conglomerate Novonor (formerly Odebrecht)."
+      },
+      {
+        "type": "h4",
+        "text": "Sanctions & structure"
+      },
+      {
+        "type": "p",
+        "text": "The transaction became possible after the U.S. Treasury Department eased sanctions and authorized operations with the state oil firm PDVSA. To comply with U.S. licensing frameworks, Maha is transferring the acquired stake to its subsidiaries in the United States."
+      },
+      {
+        "type": "h4",
+        "text": "Production targets"
+      },
+      {
+        "type": "p",
+        "text": "PetroUrdaneta is currently a low-yield asset producing about 2,000 barrels per day. Starboard and Maha plan to inject fresh investment to scale production to 15,000 barrels per day in the short term, with potential for further long-term expansion."
+      },
+      {
+        "type": "h4",
+        "text": "Wider context"
+      },
+      {
+        "type": "p",
+        "text": "The move is part of a broader push by Brazilian investment groups and independent drillers — such as Alvorada Heavy Industries — into Venezuela's energy sector as U.S. policy toward the region shifts."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Maha Capital buys stake in Venezuelan oil field",
+        "url": "https://brazilenergyinsight.com/2026/03/20/maha-capital-buys-stake-in-venezuelan-oil-field/",
+        "publisher": "Brazil Energy Insight"
+      }
+    ]
+  }
+]

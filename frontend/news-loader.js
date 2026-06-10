@@ -1,6 +1,14 @@
 // Renders SEPESA newsroom cards from news.json.
 // buildCardHTML(item) is pure (unit-tested in Node) and reused by the browser renderer.
 (function (root) {
+  // Images live in the GitHub repo, served by jsDelivr. The page may be hosted anywhere
+  // (cPanel), so resolve relative image paths to the CDN; absolute URLs pass through.
+  var CDN_BASE = 'https://cdn.jsdelivr.net/gh/marcelgerardop/venezuela-oil-news-post@main/';
+  function resolveImg(src) {
+    src = String(src == null ? '' : src);
+    return /^https?:\/\//i.test(src) ? src : CDN_BASE + src.replace(/^\//, '');
+  }
+
   function esc(s) {
     return String(s == null ? '' : s)
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -29,7 +37,7 @@
     return '' +
 '<article class="card" data-article tabindex="0" role="button" aria-haspopup="dialog">\n' +
 '  <div class="card-media">\n' +
-'    <img src="' + escAttr(item.image) + '" alt="' + escAttr(item.imageAlt) + '">\n' +
+'    <img src="' + escAttr(resolveImg(item.image)) + '" alt="' + escAttr(item.imageAlt) + '">\n' +
 '  </div>\n' +
 '  <div class="card-body">\n' +
 '    <div class="news-meta">\n' +
@@ -42,7 +50,7 @@
 '    <span class="cta">Read more <span class="ar"></span></span>\n' +
 '  </div>\n' +
 '  <template class="article-tpl">\n' +
-'    <img class="article-hero" src="' + escAttr(item.image) + '" alt="' + escAttr(item.imageAlt) + '">\n' +
+'    <img class="article-hero" src="' + escAttr(resolveImg(item.image)) + '" alt="' + escAttr(item.imageAlt) + '">\n' +
 '    <div class="article-inner">\n' +
 '      <div class="article-meta news-meta">\n' +
 '        <span>' + esc(item.category) + '</span>\n' +

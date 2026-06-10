@@ -36,3 +36,14 @@ test('escapes HTML in text fields', () => {
   assert.match(html, /&lt;script&gt;/);
   assert.match(html, /&amp;/);
 });
+
+test('relative image paths resolve to the jsDelivr CDN', () => {
+  const html = buildCardHTML({ ...item, image: 'images/maha.jpg' });
+  assert.match(html, /src="https:\/\/cdn\.jsdelivr\.net\/gh\/marcelgerardop\/venezuela-oil-news-post@main\/images\/maha\.jpg"/);
+});
+
+test('absolute image URLs pass through unchanged', () => {
+  const html = buildCardHTML({ ...item, image: 'https://example.com/p.jpg' });
+  assert.match(html, /src="https:\/\/example\.com\/p\.jpg"/);
+  assert.doesNotMatch(html, /jsdelivr.*example\.com/);
+});
