@@ -81,8 +81,10 @@ sourcesHTML(item.sources) + '\n' +
   if (typeof module !== 'undefined' && module.exports) module.exports = api; // Node test
   if (root) root.SepesaNews = api;                                           // Browser
   if (typeof document !== 'undefined') {
-    document.addEventListener('DOMContentLoaded', function () {
-      if (document.querySelector('[data-news-grid]')) init();
-    });
+    var autostart = function () { if (document.querySelector('[data-news-grid]')) init(); };
+    // If the script loaded after the DOM was ready (common when served from a CDN
+    // or with defer/async), DOMContentLoaded already fired — start immediately.
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', autostart);
+    else autostart();
   }
 })(typeof window !== 'undefined' ? window : null);
