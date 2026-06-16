@@ -1,5 +1,63 @@
 [
   {
+    "id": "2026-06-16-venezuela-signs-ge-vernova-power-grid",
+    "category": "Power Grid",
+    "dateShort": "Jun 2026",
+    "dateFull": "June 2026",
+    "cardTitle": "Venezuela signs GE Vernova power grid deal",
+    "articleTitle": "Venezuela signs major power agreement with GE Vernova to rebuild the national grid",
+    "summary": "Venezuela's interim government signed a memorandum of understanding with GE Vernova to restore 1,000 MW to the national grid within 24 months and exceed 5,000 MW within four years, laying a foundation for the recovery of the oil and gas sector.",
+    "image": "images/2026-06-16-venezuela-signs-ge-vernova-power-grid.jpg",
+    "imageAlt": "GE Vernova company sign displaying the GE logo",
+    "body": [
+      {
+        "type": "p",
+        "text": "Venezuela's interim government has signed a major energy agreement with GE Vernova, the standalone energy company formed from the breakup of General Electric. The memorandum of understanding was signed by interim President Delcy Rodríguez at the Miraflores Palace, and it sets a baseline for revitalizing the country's oil and gas sectors, which have long been held back by an unstable power grid."
+      },
+      {
+        "type": "h4",
+        "text": "Restoring power capacity"
+      },
+      {
+        "type": "p",
+        "text": "The project aims to integrate 1,000 megawatts of power back into the national grid over the next 24 months, then exceed 5,000 megawatts of restored capacity within four years. GE Vernova will rehabilitate the thermal plants of the state utility Corpoelec, modernize the aging 765 kV transmission system, and update generation at the major hydroelectric dams. The plan also deploys grid management software that uses artificial intelligence to optimize operations and reduce power fluctuations."
+      },
+      {
+        "type": "h4",
+        "text": "Why it matters for oil and gas"
+      },
+      {
+        "type": "p",
+        "text": "The recovery of the power grid is closely tied to Venezuela's oil and gas revival. Planned expansions in the sector are expected to be highly energy intensive and to exceed the 5 GW baseline that GE Vernova is building. The agreement also arrives as Venezuela reshapes its energy footprint, advancing offshore gas licenses at the Loran field for international firms such as Shell and BP, and expanding oil production ventures with Repsol."
+      },
+      {
+        "type": "h4",
+        "text": "Legal and political context"
+      },
+      {
+        "type": "p",
+        "text": "To enable the deal, the National Assembly approved a reform to the electricity law that ends a 15 year state monopoly and grants concessions of up to 25 years to private and foreign investors to generate and distribute power. The signing reflects growing cooperation between Washington and Caracas. It was supported by an expansion of sanctions relief frameworks from the U.S. Office of Foreign Assets Control and was attended by U.S. Chargé d'Affaires John Barrett."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Venezuela signs GE deal to rebuild power grid",
+        "url": "https://ca.finance.yahoo.com/news/venezuela-signs-ge-deal-rebuild-171413737.html",
+        "publisher": "Yahoo Finance"
+      },
+      {
+        "title": "Venezuela signs agreements with Shell including the Loran gas field",
+        "url": "https://www.reuters.com/business/energy/venezuela-signs-agreements-with-shell-including-loran-gas-field-2026-06-11/",
+        "publisher": "Reuters"
+      },
+      {
+        "title": "Venezuela's PDVSA and Repsol sign deal on oil and gas production",
+        "url": "https://www.reuters.com/business/energy/venezuelas-pdvsa-repsol-sign-deal-oil-gas-production-2026-06-16/",
+        "publisher": "Reuters"
+      }
+    ]
+  },
+  {
     "id": "2026-06-10-shell-signs-venezuela-gas-deal-with",
     "category": "Alliance",
     "dateShort": "Mar 2026",
