@@ -1,5 +1,77 @@
 [
   {
+    "id": "2026-06-17-restructuring-venezuelas-sovereign-debt-after-maduro",
+    "category": "Economy",
+    "dateShort": "Jun 2026",
+    "dateFull": "June 2026",
+    "cardTitle": "Restructuring Venezuela's sovereign debt after Maduro",
+    "articleTitle": "Restructuring Venezuela's sovereign debt and rebuilding its economy after Maduro",
+    "summary": "Restructuring expert Steven Kargman argues that Venezuela's recovery after Maduro needs an integrated plan addressing its $150 billion debt, economic reconstruction, humanitarian relief, and political legitimacy together, including debt for equity swaps tied to oil, gas, and minerals.",
+    "image": "images/2026-06-17-restructuring-venezuelas-sovereign-debt-after-maduro.jpeg",
+    "imageAlt": "A torn one hundred dollar bill revealing the word DEBT in red",
+    "body": [
+      {
+        "type": "p",
+        "text": "Market sentiment toward Venezuela has turned buoyant since the capture of former president Nicolás Maduro by U.S. forces in early January. Venezuelan sovereign and PDVSA bonds rallied sharply as investors anticipated that a political transition could finally open the way to long delayed debt restructuring, and the rally continued after Caracas said it intends to launch a restructuring process and has retained outside financial and legal advisers."
+      },
+      {
+        "type": "h4",
+        "text": "A disconnect with reality"
+      },
+      {
+        "type": "p",
+        "text": "In a new article, restructuring adviser Steven Kargman argues there is a major gap between that bullish mood and the structural realities Venezuela still faces. Despite Maduro's removal, the country confronts a collapsed economy, a sovereign debt overhang of $150 billion or more, a severe humanitarian crisis, and a political system widely seen as lacking legitimacy after the democratic opposition was sidelined despite its decisive victory in the August 2024 election."
+      },
+      {
+        "type": "h4",
+        "text": "Why the pieces connect"
+      },
+      {
+        "type": "p",
+        "text": "Kargman stresses that these challenges are interconnected rather than separate. A debt restructuring will not hold if the economy cannot generate the resources to repay the restructured debt, and economic reconstruction cannot succeed without the fiscal space that a restructuring creates. Neither will work unless Venezuela also eases its humanitarian crisis and restores a credible government that can attract investment and bring back the millions of citizens who fled during the collapse."
+      },
+      {
+        "type": "h4",
+        "text": "Restructuring the debt"
+      },
+      {
+        "type": "p",
+        "text": "The first pillar is a comprehensive debt restructuring. Given the scale of the burden, conventional tools such as principal reductions, maturity extensions, coupon cuts, and grace periods will almost certainly be needed. Kargman also proposes more innovative instruments, including a modernized version of the debt for equity swaps used in the Brady Plan era, under which creditors could exchange claims for equity stakes or for development rights tied to oil, gas, and Venezuela's rich mineral resources. He cautions that such exchanges would require rigorous independent valuation and broad public support to avoid claims that the government is giving away the national patrimony."
+      },
+      {
+        "type": "h4",
+        "text": "Debt for nature swaps"
+      },
+      {
+        "type": "p",
+        "text": "He also points to debt for nature or climate swaps. Venezuela's vast rainforests, river systems, and biodiversity could underpin arrangements in which creditors grant debt relief in exchange for government commitments to protect those resources, reducing the debt burden while supporting conservation and sustainable development."
+      },
+      {
+        "type": "h4",
+        "text": "Rebuilding the economy"
+      },
+      {
+        "type": "p",
+        "text": "The second pillar is economic reconstruction, with diversification at its center. After decades of overwhelming dependence on hydrocarbons, which left it exposed to price swings and the so called resource curse, Venezuela should expand into sectors where it holds an advantage, such as ecotourism, alternative energy, logistics, agro processing, specialty steel, and critical minerals. Reform or privatization of inefficient state enterprises and heavy investment in electricity, transport, telecommunications, water, and oil infrastructure would round out the effort, with public private partnerships helping to mobilize capital and expertise."
+      },
+      {
+        "type": "h4",
+        "text": "An integrated path"
+      },
+      {
+        "type": "p",
+        "text": "Kargman's central point is that these efforts should reinforce one another rather than proceed in silos. Debt for equity swaps could steer investment toward priority sectors, debt for nature swaps could fund conservation and industries such as ecotourism, and a successful restructuring would restore access to capital markets and free public resources for infrastructure, healthcare, education, and social welfare instead of debt service. Venezuela's recovery, he concludes, depends on advancing debt restructuring, economic reconstruction, humanitarian stabilization, and political renewal in parallel."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Restructuring Venezuela's sovereign debt and rebuilding its economy after Maduro",
+        "url": "https://blogs.law.ox.ac.uk/oblb/blog-post/2026/06/restructuring-venezuelas-sovereign-debt-and-rebuilding-its-economy-post",
+        "publisher": "Oxford Business Law Blog"
+      }
+    ]
+  },
+  {
     "id": "2026-06-16-venezuela-signs-ge-vernova-power-grid",
     "category": "Power Grid",
     "dateShort": "Jun 2026",
