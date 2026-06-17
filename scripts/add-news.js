@@ -104,13 +104,7 @@ try {
   process.exit(1);
 }
 
-// jsDelivr ignores query-string cache-busters — the purge endpoint is the ONLY reliable
-// way to refresh it. It propagates in ~30s.
-(async () => {
-  const base = `https://purge.jsdelivr.net/gh/${REPO.owner}/${REPO.name}@${REPO.branch}/`;
-  for (const p of ['news.json', imageRel]) {
-    try { await fetch(base + p); console.log('Purged CDN:', p); }
-    catch (e) { console.error('purge failed for', p, '-', e.message); }
-  }
-  console.log('\n✅ Published. Live on the site within ~30 seconds.');
-})();
+// No CDN purge needed: the page reads news.json from raw.githubusercontent (refreshes on its
+// own, and the loader's ?v= cache-buster makes it instant per page load), and the image has a
+// unique filename so jsDelivr serves it fresh on first request.
+console.log('\n✅ Published. The page shows it on the next load.');

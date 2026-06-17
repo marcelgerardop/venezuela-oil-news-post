@@ -71,13 +71,15 @@ sourcesHTML(item.sources) + '\n' +
 
   async function init(opts) {
     opts = opts || {};
-    var url = opts.url || 'https://cdn.jsdelivr.net/gh/marcelgerardop/venezuela-oil-news-post@main/news.json';
+    // The FEED is fetched from raw.githubusercontent (refreshes within ~5 min on its own, and a
+    // unique ?v= query makes it instant on every page load — no CDN purge needed). IMAGES are
+    // served from jsDelivr (CDN_BASE above): they have unique filenames so they're never stale.
+    var url = opts.url || 'https://raw.githubusercontent.com/marcelgerardop/venezuela-oil-news-post/main/news.json';
     var selector = opts.selector || '[data-news-grid]';
     var container = document.querySelector(selector);
     if (!container) return;
     try {
-      // Cache-buster: the feed (news.json) changes often; force a fresh copy each load so a
-      // new post shows immediately instead of waiting on a CDN/browser cached copy.
+      // Cache-buster: force a fresh copy each load so a new post shows immediately.
       var sep = url.indexOf('?') === -1 ? '?' : '&';
       var res = await fetch(url + sep + 'v=' + Date.now(), { cache: 'no-store' });
       var items = await res.json();
